@@ -4,7 +4,7 @@ Personal portfolio built with Next.js, deployed on Vercel.
 
 ## Stack
 
-- Next.js 16 (App Router) · Typescript · Tailwind CSS
+- Next.js 16 (App Router) · TypeScript · Tailwind CSS
 
 ## Build Log
 
