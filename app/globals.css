@@ -1,26 +1,60 @@
-@import "tailwindcss";
+/* ---- Color properties ---- */
+
+@property --c1 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #2b1055;
+}
+@property --c2 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #b5179e;
+}
+@property --c3 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #0f8b8d;
+}
+
+/* --- Root variables --- */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ---- Static design tokens ---- */
+  --cycle: 34s;
+
+  --ink: #f4f1ff;
+  --muted: rgba(244, 241, 255, 0.62);
+  --glass: rgba(18, 12, 38, 0.42);
+  --line: rgba(244, 241, 255, 0.14);
+
+  /* ---- The four-color animated gradient palette---- */
+
+  --plum: #2b1055;
+  --magenta: #b5179e;
+  --teal: #0f8b8d;
+  --amber: #d4762a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ---- Animated gradients ---- */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes hueCycle {
+    0%   { --c1: var(--plum);    --c2: var(--magenta); --c3: var(--teal);    }
+    25%  { --c1: var(--magenta); --c2: var(--teal);    --c3: var(--amber);   }
+    50%  { --c1: var(--teal);    --c2: var(--amber);   --c3: var(--plum);    }
+    75%  { --c1: var(--amber);   --c2: var(--plum);    --c3: var(--magenta); }
+    100% { --c1: var(--plum);    --c2: var(--magenta); --c3: var(--teal);    }
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  /* ---- Body styles ---- */
+
+  body {
+    color: var(--ink);
+    min-height: 100vh;
+
+    background:
+      radial-gradient(120% 120% at 80% 0%, rgba(0, 0, 0, 0.28), transparent 60%),
+      linear-gradient(135deg, var(--c1), var(--c2) 55%, var(--c3));
+
+    background-attachment: fixed;
+    animation: hueCycle var(--cycle) linear infinite;
+  }
