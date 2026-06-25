@@ -1,0 +1,50 @@
+/* ---- The hero section ---- */
+.hero {
+    padding: 90px 0 70px;
+}
+
+.eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 22px;
+}
+
+.statement {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.6rem, 7vw, 5.2rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    margin-bottom: 22px;
+}
+
+.lede {
+    font-size: clamp(1rem, 2.5vw, 1.22rem);
+    color: var(--muted);
+    max-width: 34ch;
+}
+
+.ctaRow {
+  display: flex;
+  gap: 14px;
+  margin-top: 38px;
+  flex-wrap: wrap;
+}
+
+.btnSolid {
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 13px 26px;
+  border-radius: 999px;             
+  background: var(--ink);           
+  color: #1a0e33;
+  transition: transform 0.2s ease;
+}
+
+.btnSolid:hover {
+  transform: translateY(-2px);
+}

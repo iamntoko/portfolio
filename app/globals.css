@@ -1,3 +1,16 @@
+/* ---- Reset ---- */
+
+* {
+  margin: 0;                 
+  padding: 0;               
+  box-sizing: border-box;   
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* ---- Color properties ---- */
 
 @property --c1 {
@@ -48,6 +61,7 @@
   /* ---- Body styles ---- */
 
   body {
+    font-family: var(--font-body);
     color: var(--ink);
     min-height: 100vh;
 
@@ -58,3 +72,10 @@
     background-attachment: fixed;
     animation: hueCycle var(--cycle) linear infinite;
   }
+
+  .wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 28px;
+  position: relative;
+}

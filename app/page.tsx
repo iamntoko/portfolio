@@ -1,9 +1,14 @@
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+
 export default function Page() {
   return (
-    <main>
-      <h1 style={{ fontFamily: "var(--font-display)" }}>Ntoko B Ndie - A Software Engineer</h1>
-      <p style={{ fontFamily: "var(--font-mono)" }}>
-        Backend &amp; Cloud Engineer </p>
-    </main>
+    <>
+      <Nav />
+      <main id="top" className="wrap">
+        <Hero />
+      </main>
+    </>
   );
 }
+
