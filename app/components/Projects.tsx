@@ -1,5 +1,6 @@
 // Projects component - Grid of project cards
 
+import Link from "next/link";
 import { projects } from "./projects.data";
 import ProjectCard from "./ProjectCard";
 import SectionHeader from "./SectionHeader";
@@ -24,6 +25,13 @@ export default function Projects() {
             <ProjectCard key={project.title} project={project} />
           ))}
         </div>
+          {/* View all projects link */}
+        <div className={styles.viewAll}>
+        {/* Link (not <a>) → client-side navigation to the /projects route. */}
+        <Link href="/projects" className={styles.viewAllLink}>
+          View all projects <span aria-hidden="true">→</span>
+        </Link>
+      </div>
     </section>
   );
 }

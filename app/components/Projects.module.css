@@ -1,9 +1,4 @@
 /* ---- Projects folder styles ---- */
-
-.section {
-    padding: 60px 0;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -11,5 +6,28 @@
     gap: 20px;
 }
 
-/* ---- Animated gradient border ---- */
+/* "View all" link below the cards. */
+.viewAll {
+  display: flex;
+  justify-content: left;
+  margin-top: 36px;
+}
+.viewAllLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 1px solid transparent;   /* transparent border, revealed on hover (your pattern) */
+  border-radius: 999px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.25s, border-color 0.25s;
+}
+.viewAllLink:hover {
+  background: rgba(244, 241, 255, 0.06);
+  border-color: rgba(244, 241, 255, 0.3);
+}
+.viewAllLink span { transition: transform 0.2s; }
+.viewAllLink:hover span { transform: translateX(3px); }
 
