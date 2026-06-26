@@ -16,7 +16,7 @@ export default function Hero() {
             </p>
 
             <div className={styles.ctaRow}>
-                <a className={styles.btnSolid} href="projects">See selected projects</a>
+                <a className={styles.btnSolid} href="#projects">See selected projects</a>
             </div>
         </header>
     );

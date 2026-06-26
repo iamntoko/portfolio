@@ -1,9 +1,4 @@
 /* ---- About Section ---- */
-
-.section {
-  padding: 60px 0;
-}
-
 .about {
   max-width: 60ch;
   color: var(--muted);
