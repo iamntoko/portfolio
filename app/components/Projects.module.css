@@ -4,14 +4,6 @@
     padding: 60px 0;
 }
 
-.title {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 1.5rem;
-  letter-spacing: -0.01em;
-  margin-bottom: 28px;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
