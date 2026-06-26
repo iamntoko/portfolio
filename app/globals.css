@@ -48,6 +48,13 @@ html {
   --amber: #d4762a;
 }
 
+/* Match the original: every anchored section gets the SAME padding and
+   scroll offset from one rule, so they all land identically below the nav. */
+section {
+  padding: 36px 0;        /* original's value */
+  scroll-margin-top: 80px; /* original's value — clears the nav consistently */
+}
+
 /* ---- Animated gradients ---- */
 
   @keyframes hueCycle {
