@@ -99,6 +99,13 @@
   color: var(--ink);
 }
 
+/* Pending badge — dimmed so it reads as aspirational, not earned. */
+.badgePending {
+  border-radius: 8px;
+  opacity: 0.45;
+  filter: grayscale(0.6);
+}
+
 /* Skills groups. */
 .skillGroups { display: flex; flex-direction: column; gap: 16px; }
 .sgRow { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; }
