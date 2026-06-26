@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Background from "./components/Background";
 import Footer from "./components/Footer";
+import BackToTop from './components/BackToTop';
 
 export default function Page() {
   return (
@@ -15,6 +16,7 @@ export default function Page() {
         <About />
         <Background />
         <Footer />
+        <BackToTop />
       </main>
       
     </>
