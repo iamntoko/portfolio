@@ -14,3 +14,4 @@ Personal portfolio built with Next.js, deployed on Vercel.
 - **2026-06-25** - Milestone 3: Built data-driven projects section — typed data array, reusable card component, and masked gradient borders.
 - **2026-06-25** - Milestone 4: Built about section with reusable section header component.
 - **2026-06-25** — Milestone 5: Built background section — experience, certifications with status variants, and skills
+- **2026-06-26** — Milestone 6: Built footer with availability status, social links, and pulsing indicator.
