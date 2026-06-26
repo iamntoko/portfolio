@@ -1,0 +1,121 @@
+.section { padding: 60px 0; }
+
+/* Each labeled block (Experience, Certs, etc.) */
+.block { margin-bottom: 36px; }
+.block:last-child { margin-bottom: 0; }
+
+/* The small uppercase mono label above each block. */
+.blockLabel {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+/* Timeline item — top border creates the divider line between roles. */
+.xpItem { padding: 16px 0; border-top: 1px solid var(--line); }
+.xpRole {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.xpMeta { color: var(--muted); font-size: 0.9rem; margin: 4px 0 8px; }
+.xpDesc { color: var(--muted); font-size: 0.95rem; }
+
+/* Small inline badge ("Forage"). */
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+}
+
+/* Bordered pill button for the "Verify certs on Credly" link.
+   Distinct from .verify (plain inline text-link) — this one is a button. */
+.verifyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 10px 20px;            /* The padding that makes it a button, not text */
+  border: 1px solid transparent; /* The border you saw missing */
+  border-radius: 999px;          /* Pill shape */
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.25s, border-color 0.25s;
+}
+.verifyBtn:hover,
+.verifyBtn:focus-visible {
+  background: rgba(244, 241, 255, 0.06);
+  border-color: rgba(244, 241, 255, 0.3);
+}
+/* Reuse the arrow slide on hover. */
+.verifyBtn:hover .arrow { transform: translateX(3px); }
+
+/* Verify link with the sliding arrow (same micro-interaction as About's buttons). */
+.verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.arrow { display: inline-block; transition: transform 0.2s; }
+.verify:hover .arrow { transform: translateX(3px); }
+
+/* Certifications list. */
+.certs { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+
+/* Earned cert: badge image beside the name. */
+.certEarned { display: flex; align-items: center; gap: 14px; }
+.certEarned img { border-radius: 8px; }
+
+/* Pending cert: dashed icon + name + status label, muted. */
+.certPending {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+}
+.certPending svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+/* The "In progress" / "Planned" status pill. */
+.statusBadge {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+}
+
+/* Skills groups. */
+.skillGroups { display: flex; flex-direction: column; gap: 16px; }
+.sgRow { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; }
+.sgName {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  min-width: 130px;  /* Aligns the tag rows by giving labels a consistent column width */
+}
+.sgTags { display: flex; flex-wrap: wrap; gap: 8px; flex: 1; }
+
+/* Tag pill — same style as your project card tags. */
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink);
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}

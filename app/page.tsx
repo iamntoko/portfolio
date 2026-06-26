@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Background from "./components/Background";
 
 export default function Page() {
   return (
@@ -11,6 +12,7 @@ export default function Page() {
         <Hero />
         <Projects />
         <About />
+        <Background />
       </main>
     </>
   );
