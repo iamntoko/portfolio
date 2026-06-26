@@ -1,0 +1,36 @@
+/* app/components/BackToTop.module.css */
+
+.toTop {
+  position: fixed;             /* Stays in place relative to the viewport */
+  bottom: 28px;
+  right: 28px;
+  z-index: 10;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Hidden by default: invisible and shifted down, ignoring clicks. */
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s, background 0.25s;
+}
+
+/* The "show" state: fade in, slide up, become clickable. */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;  /* Re-enable clicks only when visible */
+}
+
+.toTop svg { width: 20px; height: 20px; }
+.toTop:hover { background: rgba(244, 241, 255, 0.1); }
