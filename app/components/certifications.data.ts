@@ -28,11 +28,20 @@ export const certifications: Certification[] = [
   {
     name: "AWS Solutions Architect – Associate",
     status: "pending",
+    badgeImg: "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+
     label: "In progress",
   },
   {
     name: "AWS Certified Developer – Associate",
     status: "pending",
+    badgeImg: "https://images.credly.com/size/340x340/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png",
+    label: "In progress",
+  },
+  {
+    name: "HashiCorp Certified: Terraform Associate (004)",
+    status: "pending",
+    badgeImg: "https://images.credly.com/size/340x340/images/0e717fa5-93a1-4203-964c-051b4734b7eb/blob",
     label: "In progress",
   },
 ];

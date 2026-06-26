@@ -23,9 +23,15 @@ export default function CertsBlock() {
             ) : (
               // PENDING branch: dashed-circle icon + name + status label.
               <>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-                  <circle cx="12" cy="12" r="9" strokeDasharray="3 3" />
-                </svg>
+                {/* If a badge image is provided, show it (dimmed). Otherwise, the dashed circle.
+        This conditional lets SOME pending certs have a badge and others not. */}
+                {cert.badgeImg ? (
+                  <img src={cert.badgeImg} alt="" width={72} height={72} className={styles.badgePending} />
+                ) : (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" strokeDasharray="3 3" />
+                  </svg>
+                )}    
                 {cert.name} <span className={styles.statusBadge}>{cert.label}</span>
               </>
             )}
