@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Background from "./components/Background";
+import Footer from "./components/Footer";
 
 export default function Page() {
   return (
@@ -13,7 +14,9 @@ export default function Page() {
         <Projects />
         <About />
         <Background />
+        <Footer />
       </main>
+      
     </>
   );
 }
