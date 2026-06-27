@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en" 
       data-scroll-behavior="smooth"
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetBrainsMono.variable}`}
       
