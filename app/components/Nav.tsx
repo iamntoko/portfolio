@@ -38,7 +38,6 @@ export default function Nav() {
     if (isHome) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
-      setScrolled(false);
     }
   };
 
