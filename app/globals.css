@@ -46,6 +46,7 @@ html {
   --magenta: #b5179e;
   --teal: #0f8b8d;
   --amber: #d4762a;
+  --gold: rgba(244, 183, 40, 0.6)
 }
 
 /* Match the original: every anchored section gets the SAME padding and
