@@ -32,7 +32,9 @@ export default function Footer() {
 
       {/* Copyright line. Updated to reflect the rebuild's actual stack. */}
       <span className={styles.copy}>
-        © 2026 Ntoko B Ndie · Built with Next.js, React &amp; TypeScript, styled with CSS Modules, deployed on Vercel.
+        © 2026 <span className={styles.brand}>i am ntoko</span><span> 
+          · Built with Next.js, React &amp; TypeScript, styled with CSS Modules, deployed on Vercel.
+          </span>
       </span>
     </footer>
   );

@@ -28,6 +28,23 @@
   animation: pulse 2s infinite;         /* The pulsing effect */
 }
 
+/* The footer brand wordmark — italic display font, tight spacing, echoing the logo. */
+.brand {
+  font-family: var(--font-brand);  /* Space Grotesk — your display font */
+  font-weight: 400;
+  letter-spacing: -0.02em;           /* Tight spacing — negative tracking pulls letters closer */
+  color: var(--gold);                 /* Brighter than the muted copyright text, so it stands out */
+
+  /* The closed border around the wordmark. */
+  border: 1px solid var(--gold);  /* slightly translucent gold — softer edge */
+  border-radius: 6px;             /* Slightly rounded corners (use 999px for a full pill) */
+  padding: 1px 8px;               /* Space between the text and the border — without this, the border hugs the letters too tightly */
+  margin: 0 4px;                  /* Horizontal margin to separate the brand from surrounding text */
+
+  /* This matters — see explanation below. */
+  display: inline-block;
+}
+
 /* The pulse: an expanding, fading ring radiating from the dot. */
 @keyframes pulse {
   0%   { box-shadow: 0 0 0 0 rgba(61, 220, 132, 0.6); }   /* ring starts tight + visible */
