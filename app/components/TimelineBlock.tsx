@@ -19,8 +19,8 @@ export default function TimelineBlock({ label, items }: { label: string; items: 
           <p className={styles.xpDesc}>{item.description}</p>
 
           
-          {item.verifyHref && (
-            <a className={styles.verify} href={item.verifyHref} target="_blank" rel="noopener noreferrer">
+          {item.certUrl && (
+            <a className={styles.verify} href={item.certUrl} target="_blank" rel="noopener noreferrer">
               View certificate <span className={styles.arrow} aria-hidden="true">→</span>
             </a>
           )}
