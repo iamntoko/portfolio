@@ -3,7 +3,7 @@ export type TimelineItem = {
   meta: string;
   description: string;
   badge?: string;
-  verifyHref?: string;
+  certUrl?: string;
 };
 
 export const experience: TimelineItem[] = [
@@ -23,11 +23,11 @@ export const experience: TimelineItem[] = [
 
 export const jobSimulations: TimelineItem[] = [
   {
-    role: "Company — Program name",
-    meta: "Virtual experience · 2025",
+    role: "Software Engineering Virtual Experience",
+    meta: "J.P. Morgan · Forage · March 2023",
     badge: "Forage",
     description:
-      "One line on what the simulation involved — lead with the outcome. Replace with a real Forage program relevant to backend or cloud.",
-    verifyHref: "#",
+      "Built a real-time data-visualization feed for traders using J.P. Morgan's open-source Perspective library — streaming a live updating graph from a data feed. Debugged and repaired the application codebase to render correctly.",
+    certUrl: "https://www.theforage.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_c962wZKni3NYqarpS_1678218787609_completion_certificate.pdf",
   },
 ];
