@@ -21,7 +21,17 @@ export const experience: TimelineItem[] = [
   },
 ];
 
+
+
 export const jobSimulations: TimelineItem[] = [
+  {
+    role: "Software Engineering Virtual Experience",
+    meta: "Quantium · Forage · July 2026",
+    badge: "Forage",
+    description:
+      "Built an interactive Dash application for analyzing how price changes affect sales and profitability, backed by an automated test suite and a bash script to run it. Focused on a clean, intuitive interface for client-facing data exploration.",
+    certUrl: "https://www.theforage.com/completion-certificates/32A6DqtsbF7LbKdcq/jhiG2W9K8KLZK8nXP_32A6DqtsbF7LbKdcq_c962wZKni3NYqarpS_1782947364385_completion_certificate.pdf",
+  },
   {
     role: "Software Engineering Virtual Experience",
     meta: "BlackBird · Forage · July 2026",
